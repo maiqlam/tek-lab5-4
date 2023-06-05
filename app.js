@@ -113,4 +113,41 @@ Write a loop that will print out every third number starting with 12 and going n
 Print out the numbers that are within the range of 1 - 100.
 Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
 */
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i + " <-- is an even number.");
+//     }
+//     else {console.log(i)}
+// };
 
+/* C. Give Me Five
+1. For the numbers 0 - 100, print out "I found a `<number>`. High five!" if the number is a multiple of five. */
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 5 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". High five!");
+//     }
+// }
+
+/* 2. Add to the code from above to print out "I found a `number`. Three is a crowd." if the number is a multiple of three. */
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 5 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". High five!");
+//     }
+//     if (i % 3 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". Three is a crowd.");
+//     }
+// }
+
+/* 3. For numbers divisible by _both three and five_, be sure your code prints both messages. */
+for (let i = 0; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0 && i !== 0) {
+        console.log("I found a " + i + ". High five! Three is a crowd.");
+    }
+    else if (i % 3 === 0 && i !== 0) {
+        console.log("I found a " + i + ". Three is a crowd.");
+    }    
+    else if (i % 5 === 0 && i !== 0) {
+        console.log("I found a " + i + ". High five!");
+    }
+
+}
