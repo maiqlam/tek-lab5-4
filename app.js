@@ -169,3 +169,33 @@ Adjust your code to add a message next to even numbers only that says: "<-- is a
 // console.log(bank_account); // 10100
 
 // III. Arrays & Control Flow
+/* A. Talk About It
+1. What are the things in an array called?
+    elements, sorted by index.
+2. Do Arrays guarantee those things will be in order?
+    yes, the elements are stored in the array by location specified by index (zero based)
+3. What real-life thing could you model with an array? 
+    class roster, inventory by category, etc */
+
+/* B. Easy Does It
+- Create an array that contains three quotes and store it in a variable called `quotes`.*/
+// const quotes = ["This is my first quote.", "Second quote.", "This can get a little boring."]
+// console.log(quotes);
+
+/* C. Accessing Elements
+Given the following array, `const randomThings = [1, 10, "Hello", true]`:
+1. How do you access the 1st element in the array?
+2. What would you write to access the 3rd element of the array? */
+const randomThings = [1, 10, "Hello", true]
+console.log(randomThings[0]);
+console.log(randomThings[2]);
+
+/* D. Change Values
+Given the following array, `const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]`:
+2. Change the value of "Github" to "Octocat".
+3. Add a new element, "Cloud City" to the array.
+4. Check the value of the array to make sure it updated the array. */
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+// ourClass.splice(ourClass.indexOf("Github"), 1, "Octocat")
+// ourClass.push("Cloud City");
+// console.log(ourClass);
