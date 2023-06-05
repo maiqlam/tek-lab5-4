@@ -199,3 +199,20 @@ Given the following array, `const ourClass = ["Salty", "Zoom", "Sardine", "Slack
 // ourClass.splice(ourClass.indexOf("Github"), 1, "Octocat")
 // ourClass.push("Cloud City");
 // console.log(ourClass);
+
+/*  E. Mix It Up
+Given the following array, `const myArray = [5, 10, 500, 20]`:
+1. Add the string `"Aegon"` to the end of the array. Add another string of your choice to the end of the array.
+2. Remove the `5` from the beginning of the array.
+3. Add the string `"Bob Marley"` to the beginning of the array.
+4. Remove the string of your choice from the end of the array.
+5. Reverse this array using `Array.prototype.reverse()`.
+Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything? yes - changed or added elements through the utilized methods will mutate an array. */
+const myArray = [5, 10, 500, 20]
+myArray.push("Aegon");
+myArray.push("Another string of my choice...");
+myArray.shift();
+myArray.unshift("Bob Marley");
+myArray.pop();
+console.log(myArray);
+console.log(myArray.reverse());
