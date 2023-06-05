@@ -460,3 +460,22 @@ user.friend.purchased.push("a latte");
 console.log(user.friend);
 console.log(user.friend.purchased[1]);
 
+/* G. Functions Operating on Objects
+Write a single function `updateUser` that takes no parameters. When the function is run, it should:
+- Increment the user's age by 1.
+- Make the user's name uppercase.
+The function does not need a `return` statement, it will merely modify the user object.
+- Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the function is called. Call your `oldAndLoud` function with `user` as the argument. */
+// function updateUser() {
+//     user.age += 1;
+//     user.name = user.name.toUpperCase();
+// }
+// updateUser();
+// console.log(user);
+// function oldAndLoud(person) {
+//     person.age = person.age += 1;
+//     person.name = person.name.toUpperCase();
+//     return person
+// }
+//  console.log(oldAndLoud(user));
+
