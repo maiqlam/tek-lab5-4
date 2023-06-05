@@ -68,12 +68,23 @@ Declare a variable animal. Set it to be "cow" or some other animal.
 Write code that will print out "mooooo" if the variable is equal to cow.
 Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
 */
-
+let animal = "cow";
+// animal = "dog";
+if (animal === "cow") {
+    console.log("moooo");
+}
+else {console.log("Hey! You're not a cow.");}
 
 /* E. Driver's Ed
 Make a variable that holds a person's age; be semantic.
-Write code that will print out "Here are the keys!" if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
-/*
+Write code that will print out "Here are the keys!" if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."*/
+let driverAge = 16;
+if (driverAge >= 16) {
+    console.log("Here are the keys!");
+};
+if (driverAge < 16) {
+    console.log("Sorry, you're too young.")
+};
 
 // II. Loops
 /* Remember: USE let when you initialize your for loops!
@@ -85,6 +96,18 @@ Write a loop that will print out all the numbers from 0 to 10,inclusive.
 Write a loop that will print out all the numbers from 10 up to and including 400.
 Write a loop that will print out every third number starting with 12 and going no higher than 4000.
 */
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// for (let i = 10; i <= 400; i++) {
+//     console.log(i);
+// }
+
+// for (let i = 12; i < 4000; i += 3) {
+//     console.log(i);
+// }
+
 
 /* B. Get Even
 Print out the numbers that are within the range of 1 - 100.
