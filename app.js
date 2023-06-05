@@ -208,11 +208,24 @@ Given the following array, `const myArray = [5, 10, 500, 20]`:
 4. Remove the string of your choice from the end of the array.
 5. Reverse this array using `Array.prototype.reverse()`.
 Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything? yes - changed or added elements through the utilized methods will mutate an array. */
-const myArray = [5, 10, 500, 20]
-myArray.push("Aegon");
-myArray.push("Another string of my choice...");
-myArray.shift();
-myArray.unshift("Bob Marley");
-myArray.pop();
-console.log(myArray);
-console.log(myArray.reverse());
+// const myArray = [5, 10, 500, 20]
+// myArray.push("Aegon");
+// myArray.push("Another string of my choice...");
+// myArray.shift();
+// myArray.unshift("Bob Marley");
+// myArray.pop();
+// console.log(myArray);
+// console.log(myArray.reverse());
+
+/* F. Biggie Smalls
+Create a variable that contains an integer.
+Write an `if ... else` statement that:
+1. `console.log()`s "little number" if the number is entered is less than 100.
+2. `console.log()`s "big number" if the number is greater than or equal to 100. */
+// let biggieSmalls = 100;
+// if (biggieSmalls < 100) {
+//     console.log("little number");
+// }
+// else {console.log("big number");}
+
+
