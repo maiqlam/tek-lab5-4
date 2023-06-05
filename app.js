@@ -515,12 +515,23 @@ const cat2 = {
 - `age` is 1.
 - `breed` is each of the parents' breeds with a hyphen in between. */
 
-// function combineCats(mama, papa) {
-//     let kitty = [];
-//     kitty.name = mama.name.concat(papa.name);
-//     kitty.age = 1;
-//     kitty.breed = `${mama.breed}-${papa.breed}`;
-//     return kitty
-// }
-// console.log(combineCats(cat1, cat2));
+function combineCats(mama, papa) {
+    let kitty = [];
+    kitty.name = mama.name.concat(papa.name);
+    kitty.age = 1;
+    kitty.breed = `${mama.breed}-${papa.breed}`;
+    return kitty
+}
+console.log(combineCats(cat1, cat2));
 
+/* K. Cat Brain-Bender
+If `combineCats` returns an **object**, and if `combineCats` takes **objects** as **arguments**, then it stands to reason that:
+`combineCats` can use **itself** as its own argument.
+Take a second to stew on that.
+What is the result of the following?*/
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+/* The above `console.log` is **two levels** deep of `combineCats`.
+- Write a `console.log` that is **three levels** deep of `combineCats`. `combineCats` should have two arguments, each which are `combineCats`, each which have two arguments, each which are `combineCats`.
+Your output should look something like:
+> { name: 'JoeJamJoeJamJoeJamJoeJam`, age: 1, breed: 'Mog-Siamese-Mog-Siamese-Mog-Siamese-Mog-Siamese' } */
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
