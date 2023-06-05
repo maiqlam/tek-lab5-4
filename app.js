@@ -44,31 +44,31 @@ console.log("Hello, my name is " + yourName);
 
 
 /* C. Booleans
-
 Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax, not weird things that don't make sense but happen to print true to the console. */
-/*
+
 const a = 4;
 const b = 53;
 const c = 57;
 const d = 16;
 const e = 'Kevin';
-console.log(a __ b);
-console.log(c __ d);
-console.log('Name' __ 'Name');
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
 // FOR THE NEXT TWO, USE ONLY && OR ||
-console.log(true __ false);
-console.log(false __ false __ false __ false __ false __ true);
-console.log(false __ false)
-console.log(e __ 'Kevin');
-console.log(a __ b __ c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
-console.log(a __ a __ d); // note: the answer is a simple arithmetic equation, not something "weird"
-console.log(48 __ '48');
+console.log(true || false);
+console.log(false && false && false && false && false || true);
+console.log(false === false)
+console.log(e == 'Kevin');
+console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
+console.log(48 == '48');
 
 /* D. The Farm
 Declare a variable animal. Set it to be "cow" or some other animal.
 Write code that will print out "mooooo" if the variable is equal to cow.
 Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
 */
+
 
 /* E. Driver's Ed
 Make a variable that holds a person's age; be semantic.
