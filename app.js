@@ -299,3 +299,73 @@ console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsClo
 /* 8. Get more specific about what kind of PJs Thom is wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`. */
 thomsCloset[1][2] = "Footie Pajamas";
 console.log(thomsCloset);
+
+// IV. Functions
+/* A. printGreeting
+Write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting, like so:
+console.log(printGreeting("Slimer"));
+> => Hello there, Slimer! */
+function printGreeting(name) {
+    return ("Hello there, " + name + "!")
+}
+console.log(printGreeting("Slimer"));
+
+/* B. printCool
+Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
+console.log(printCool("Captain Reynolds"));
+> => "Captain Reynolds is cool" */
+function printCool(name) {
+    return (name + " is cool.")
+}
+console.log(printCool("Captain Reynolds"));
+
+/* C. calculateCube
+Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
+console.log(calculateCube(5));
+> => 125 */
+function calculateCube(number) {
+    return (number ** 3)
+}
+console.log(calculateCube(5));
+
+/* D. isVowel
+Write a function `isVowel` that takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise. The vowel could be upper or lower case.
+**Test your function on every vowel and make sure it's working.** In general, when you write functions, take a minute to test them with different values to make sure they behave the way you expect.
+console.log(isVowel("a"));
+> => true */
+// function isVowel(char) {
+//     vowels = "a", "e", "i", "o", "u";
+//     if (char.includes(vowels) || char.includes(vowels.toUpperCase())) {
+//         return true
+//     }
+//     else {return false}
+// }
+// console.log(isVowel("A"));
+
+/* E. getTwoLengths
+Write a function `getTwoLengths` that accepts two parameters (strings). The function should `return` an _array_ of numbers where each number is the length of the corresponding string.
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+> => [4, 13] */
+// function getTwoLengths(firstName, lastName) {
+//     return ([firstName.length, lastName.length])
+// }
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+/* F. getMultipleLengths
+Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should `return` an **array** of **numbers** where each number is the length of the corresponding string.
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+> => [5, 4, 2, 2, 4] */
+// function getMultipleLengths(stringArr) {
+//     let numArr = [];
+//     for (let i = 0; i < stringArr.length; i++) {
+//         let string = stringArr[i];
+//         numArr.push(string.length);
+//     }
+//     return numArr
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+/* G. maxOfThree
+Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+console.log(maxOfThree(6, 9, 1));
+> => 9 */
