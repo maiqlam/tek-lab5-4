@@ -139,15 +139,33 @@ Adjust your code to add a message next to even numbers only that says: "<-- is a
 // }
 
 /* 3. For numbers divisible by _both three and five_, be sure your code prints both messages. */
-for (let i = 0; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0 && i !== 0) {
-        console.log("I found a " + i + ". High five! Three is a crowd.");
-    }
-    else if (i % 3 === 0 && i !== 0) {
-        console.log("I found a " + i + ". Three is a crowd.");
-    }    
-    else if (i % 5 === 0 && i !== 0) {
-        console.log("I found a " + i + ". High five!");
-    }
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". High five! Three is a crowd.");
+//     }
+//     else if (i % 3 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". Three is a crowd.");
+//     }    
+//     else if (i % 5 === 0 && i !== 0) {
+//         console.log("I found a " + i + ". High five!");
+//     }
+// }
 
-}
+/* D. Savings Account
+1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
+> Check your work! Your `bank_account` should have $55 in it.
+2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+> Check your work! Your `bank_account` should have $10,100 in it. */
+// let bank_account = 0;
+// for (let i = 1; i <= 10; i++) {
+//     bank_account += i;
+// }
+// console.log(bank_account); // 55
+
+// let bank_account = 0;
+// for (let i = 1; i <= 100; i++) {
+//     bank_account += (i * 2);
+// }
+// console.log(bank_account); // 10100
+
+// III. Arrays & Control Flow
