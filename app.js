@@ -479,3 +479,48 @@ The function does not need a `return` statement, it will merely modify the user 
 // }
 //  console.log(oldAndLoud(user));
 
+/* H. Mama cat
+Define an object called `cat1` that contains the following properties:
+- name
+- breed
+- age (a number)
+`console.log` the cat's age and breed. */
+const cat1 = {
+    name: "Meowie",
+    breed: "Siamese",
+    age: 20,
+}
+console.log(cat1.age, cat1.breed);
+
+/* I. Papa cat
+Define an object called `cat2` that contains the same properties. */
+const cat2 = {
+    name: "Kenny",
+    breed: "Tabby",
+    age: 19,
+}
+
+/* J. Combine Cats!
+- Write a function `combineCats` that has two parameters: `mama`, and `papa`. The function will take two arguments -- each a cat object.
+- Pass `cat1` and `cat2` as arguments to the `combineCats` function. The function should `console.log` them. */
+
+// function combineCats(mama, papa) {
+//     console.log(mama, papa);
+// }
+
+// combineCats(cat1, cat2)
+
+/* Make it so the `combineCats` function will return a combination of the two incoming cats. The result should be an object wherein the:
+- `name` is a concatenation of the parents' names.
+- `age` is 1.
+- `breed` is each of the parents' breeds with a hyphen in between. */
+
+// function combineCats(mama, papa) {
+//     let kitty = [];
+//     kitty.name = mama.name.concat(papa.name);
+//     kitty.age = 1;
+//     kitty.breed = `${mama.breed}-${papa.breed}`;
+//     return kitty
+// }
+// console.log(combineCats(cat1, cat2));
+
