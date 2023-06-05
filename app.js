@@ -228,4 +228,16 @@ Write an `if ... else` statement that:
 // }
 // else {console.log("big number");}
 
-
+/* G. Monkey in the Middle
+Write an `if ... else` statement:
+1. `console.log()` `little number` if the number entered is less than 5.
+2. If the number entered is more than 10, log "big number".
+3. Otherwise, log "monkey". */
+// let monkey = 11;
+// if (monkey < 5) {
+//     console.log("little number")
+//     }
+// else if (monkey > 10) {
+//     console.log("big number")
+//     }
+// else {console.log("monkey")};
