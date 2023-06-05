@@ -398,3 +398,65 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // }
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
+// OBJECTS
+/* A. Make a User Object
+1. Create an object called `user`.
+2. Write into the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like. */
+const user = {
+    name: "Mai",
+    email: "bun@carrot.com",
+    age: 900, 
+    purchased: [],
+}
+
+/* B. Update the User
+1. Our user has changed his or her email address. Without changing the original `user` object, update the `email` value to a new email address.
+2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`.*/
+user.email = "bun@warren.com";
+user.age++;
+
+/* ### C. Adding Keys and Values
+You have decided to add your user's location to the data that you want to collect.
+- Without changing the original `user` object, add a new key `location` to the object, and give it a value of some location (a string). */
+user.location = "Michigan";
+
+/* D. Shopaholic!
+1. Our user has purchased some items! They have purchased some "carbohydrates". Using `.push()`, add the string "carbohydrates" to the `purchased` array.
+2. They have purchased some "peace of mind". Using `.push()`, add the string "peace of mind" to the `purchased` array.
+3. They have purchased some "Merino jodhpurs". Using `.push()`, add the string "Merino jodhpurs" to the `purchased` array.
+4. `Console.log` just the "Merino jodhpurs" from the `purchased` array. */
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+console.log(user.purchased[2]);
+
+/* E. Object within an Object
+Remember that you can add an object to an existing object in the same way that you can add any new key-value pair.
+If we want to give our user a `friend` with a `name` and `age`, we could write:
+user.friend = {
+    name: "Grace Hopper",
+    age: 85
+}
+When we `console.log` `user`, we would see the `friend` object added to our user object.
+1. Write a `friend` object into your `user` object and give the friend a name, age, location, and purchased array (empty for now).
+2. `Console.log` just the friend's name.
+3. `Console.log` just the friend's location.
+4. Change the friend's age to 55.
+5. The `friend` has purchased "The One Ring". Use `.push()` to add "The One Ring" to the friend's `purchased` array.
+6. The `friend` has purchased "A latte". Use `.push()` to add "A latte" to the friend's `purchased` array.
+7. `Console.log` just "A latte" from the friend's `purchased` array.*/
+user.friend = {
+    name: "Ted",
+    age: 905,
+    location: "San Fran",
+    purchased: [],
+}
+
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("a latte");
+console.log(user.friend);
+console.log(user.friend.purchased[1]);
+
