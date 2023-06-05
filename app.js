@@ -369,3 +369,32 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
 console.log(maxOfThree(6, 9, 1));
 > => 9 */
+// function maxOfThree(x, y, z) {
+//     if (x >= y && x >= z) {
+//         return x;
+//     }
+//     else if (y >= x && y >= z) {
+//         return y;
+//     }
+//     else {
+//         return z;
+//     }
+// }
+// console.log(maxOfThree(1, 10, 10));
+
+/* H. printLongestWord
+Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+> => "Peanutbutter" */
+// function printLongestWord(words) {
+//     let longestWord = words[0];
+//     for (let i = 0; i < words.length; i++) {
+//         let word = words[i];
+//         if (word.length > longestWord.length) {
+//             longestWord = word;
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
